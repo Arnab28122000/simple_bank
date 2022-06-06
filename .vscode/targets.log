@@ -1,0 +1,299 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-cygwin
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Jun  5 17:24:40 2022
+
+# Variables
+
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+SYSTEMDRIVE = C:
+# environment
+JAVA_HOME = C:\Program Files\Android\Android Studio\jre
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\arnab
+# environment
+LOCALAPPDATA = C:\Users\arnab\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-583472c6-53c1-42da-a74a-d492aba1c17b-sock
+# environment
+VSCODE_CWD = C:\Users\arnab\OneDrive\Desktop\go\simplebank
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make
+# environment
+GOPATH = C:\Users\arnab\go
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20320_WFJLUASFPLUZDXSM
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\arnab\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /cygdrive/c/Users/arnab/AppData/Local/Temp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\arnab\OneDrive
+# makefile
+CURDIR := /cygdrive/c/Users/arnab/OneDrive/Desktop/go/simplebank
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+!C: = c:\Users\arnab\OneDrive\Desktop\go\simplebank
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 20320
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-cygwin
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := /bin/sh
+# environment
+HOMEPATH = \Users\arnab
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /cygdrive/c/Python39/Scripts:/cygdrive/c/Python39:/cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/nodejs:/cygdrive/c/ProgramData/chocolatey/bin:/cygdrive/c/Program Files/Docker/Docker/resources/bin:/cygdrive/c/ProgramData/DockerDesktop/version-bin:/cygdrive/c/Program Files/dotnet:/cygdrive/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/cygdrive/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/Program Files/Go/bin:/usr/bin:/cygdrive/c/Users/arnab/scoop/shims:/cygdrive/c/Users/arnab/.local/share/solana/install/active_release/bin:/cygdrive/c/Users/arnab/AppData/Local/Programs/Python/Python310/Scripts:/cygdrive/c/Users/arnab/AppData/Local/Programs/Python/Python310:/cygdrive/c/Users/arnab/.cargo/bin:/cygdrive/c/Users/arnab/AppData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/arnab/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/flutter/bin:/cygdrive/c/Program Files/Android/Android Studio/jre/bin:/cygdrive/c/Program Files (x86)/Java/jre1.8.0_301:/cygdrive/c/Users/arnab/AppData/Roaming/npm:/cygdrive/c/flutter/.pub-cache/bin:/cygdrive/c/Users/arnab/.dotnet/tools:/cygdrive/c/Users/arnab/.local/share/solana/install/releases/1.9.12/solana-release/bin/sdk/bpf:/cygdrive/c/Users/arnab/go/bin:/cygdrive/c/Program Files/Go/bin
+# environment
+ZES_ENABLE_SYSMAN = 1
+# environment
+COMPUTERNAME = DESKTOP-TPI0C5M
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132744745077732603
+# environment
+LOGONSERVER = \\DESKTOP-TPI0C5M
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = arnab
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-TPI0C5M
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# makefile
+.DEFAULT_GOAL := createdb
+# environment
+BPF SDK = C:\Users\arnab\.local\share\solana\install\releases\1.9.12\solana-release\bin\sdk\bpf
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-TPI0C5M
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\arnab\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /cygdrive/c/Users/arnab/.local/share/solana/install/releases/1.9.12/solana-release/bin/sdk/bpf
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /cygdrive/c/Users/arnab/AppData/Local/Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\b7222da95d677b13f486e33c814fb65b-1.67.2-main-sock
+# environment
+TERM = xterm-256color
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+PROCESSOR_REVISION = 8c01
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+# variable set hash-table stats:
+# Load=104/1024=10%, Rehash=0, Collisions=12/131=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 586749841, inode 18014398512326528): 5 files, no impossibilities.
+
+# 5 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-05 05:42:47.6160518
+#  File has been updated.
+#  Successfully updated.
+
+dropdb:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	docker exec -it postgres14 dropdb --username=root --owner=root simple_bank
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+createdb:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	docker exec -it postgres14 createdb --username=root --owner=root simple_bank
+
+.PHONY: createdb dropdb
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/19=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 12 / storage = 84 B / avg = 7 B
+# current buf: size = 8162 B / used = 84 B / count = 12 / avg = 7 B
+
+# strcache performance: lookups = 21 / hit rate = 42%
+# hash-table stats:
+# Load=12/8192=0%, Rehash=0, Collisions=0/21=0%
+# Finished Make data base on Sun Jun  5 17:24:40 2022
+
+ 

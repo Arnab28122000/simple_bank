@@ -1,0 +1,5 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/cygdrive/c/Users/arnab/OneDrive/Desktop/go/simplebank'
+docker exec -it postgres14 createdb --username=root --owner=root simple_bank
+make: Leaving directory '/cygdrive/c/Users/arnab/OneDrive/Desktop/go/simplebank'
+ 
