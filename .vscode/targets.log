@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun  5 17:24:40 2022
+# Make data base, printed on Sat Jun 18 23:53:33 2022
 
 # Variables
 
@@ -25,7 +25,7 @@ USERPROFILE = C:\Users\arnab
 # environment
 LOCALAPPDATA = C:\Users\arnab\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-583472c6-53c1-42da-a74a-d492aba1c17b-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d9f2f76c-13ae-4c57-bb44-4cec8e494ac3-sock
 # environment
 VSCODE_CWD = C:\Users\arnab\OneDrive\Desktop\go\simplebank
 # environment
@@ -43,7 +43,7 @@ GOPATH = C:\Users\arnab\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20320_WFJLUASFPLUZDXSM
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13468_KZYOFZYJDAHEEVHW
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -59,7 +59,7 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\arnab\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = C:\Users\arnab\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
 LANG = C
 # default
@@ -99,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 20320
+VSCODE_PID = 13468
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -167,7 +167,7 @@ GNUMAKEFLAGS :=
 # environment
 OS = Windows_NT
 # makefile
-.DEFAULT_GOAL := createdb
+.DEFAULT_GOAL := postgres
 # environment
 BPF SDK = C:\Users\arnab\.local\share\solana\install\releases\1.9.12\solana-release\bin\sdk\bpf
 # default
@@ -187,6 +187,8 @@ HOMEDRIVE = C:
 # environment
 PROCESSOR_ARCHITECTURE = AMD64
 # environment
+GOMODCACHE = C:\Users\arnab\go\pkg\mod
+# environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /cygdrive/c/Users/arnab/.local/share/solana/install/releases/1.9.12/solana-release/bin/sdk/bpf
@@ -197,9 +199,11 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = /cygdrive/c/Users/arnab/AppData/Local/Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\b7222da95d677b13f486e33c814fb65b-1.67.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\b7222da95d677b13f486e33c814fb65b-1.68.1-main-sock
 # environment
 TERM = xterm-256color
+# environment
+GOPROXY = https://proxy.golang.org,direct
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -221,7 +225,7 @@ PROCESSOR_REVISION = 8c01
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 # variable set hash-table stats:
-# Load=104/1024=10%, Rehash=0, Collisions=12/131=9%
+# Load=106/1024=10%, Rehash=0, Collisions=12/133=9%
 
 # Pattern-specific Variable Values
 
@@ -229,9 +233,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (device 586749841, inode 18014398512326528): 5 files, no impossibilities.
+# . (device 586749841, inode 18014398512326528): 9 files, no impossibilities.
 
-# 5 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -239,10 +243,18 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 
 # Files
 
+migratedown:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 14):
+	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose down
+
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-05 05:42:47.6160518
+#  Last modified 2022-06-06 05:08:54.0956692
 #  File has been updated.
 #  Successfully updated.
 
@@ -251,8 +263,16 @@ dropdb:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
-	docker exec -it postgres14 dropdb --username=root --owner=root simple_bank
+#  recipe to execute (from 'Makefile', line 8):
+	docker exec -it postgres14 dropdb simple_bank
+
+migrateup:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
+	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose up
 
 # Not a target:
 .DEFAULT:
@@ -267,33 +287,49 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
-createdb:
+sqlc:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 17):
+	docker run --rm -v "%cd%:/src" -w /src kjconroy/sqlc generate
+
+postgres:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
+	docker run --name postgres14 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:14-alpine
+
+createdb:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
 	docker exec -it postgres14 createdb --username=root --owner=root simple_bank
 
-.PHONY: createdb dropdb
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/19=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/27=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 12 / storage = 84 B / avg = 7 B
-# current buf: size = 8162 B / used = 84 B / count = 12 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 152 B / avg = 7 B
+# current buf: size = 8162 B / used = 152 B / count = 20 / avg = 7 B
 
-# strcache performance: lookups = 21 / hit rate = 42%
+# strcache performance: lookups = 37 / hit rate = 45%
 # hash-table stats:
-# Load=12/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Sun Jun  5 17:24:40 2022
+# Load=20/8192=0%, Rehash=0, Collisions=0/37=0%
+# Finished Make data base on Sat Jun 18 23:53:33 2022
 
  
