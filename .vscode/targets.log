@@ -7,8 +7,9 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Sat Jun 18 23:53:33 2022
+# Make data base, printed on Sun Jun 19 21:38:15 2022
 
 # Variables
 
@@ -25,7 +26,7 @@ USERPROFILE = C:\Users\arnab
 # environment
 LOCALAPPDATA = C:\Users\arnab\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d9f2f76c-13ae-4c57-bb44-4cec8e494ac3-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ac0dbf75-86b2-4c4e-800c-2ac6fb1a9595-sock
 # environment
 VSCODE_CWD = C:\Users\arnab\OneDrive\Desktop\go\simplebank
 # environment
@@ -43,7 +44,7 @@ GOPATH = C:\Users\arnab\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13468_KZYOFZYJDAHEEVHW
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_23708_WWGDNUQBXIPRAVZQ
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -99,7 +100,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 13468
+VSCODE_PID = 23708
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -233,9 +234,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (device 586749841, inode 18014398512326528): 9 files, no impossibilities.
+# . (device 586749841, inode 18014398512326528): 11 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -254,7 +255,7 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-06 05:08:54.0956692
+#  Last modified 2022-06-19 05:28:01.8216892
 #  File has been updated.
 #  Successfully updated.
 
@@ -287,6 +288,14 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	go test -v -cover ./...
+
 sqlc:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -311,25 +320,25 @@ createdb:
 #  recipe to execute (from 'Makefile', line 5):
 	docker exec -it postgres14 createdb --username=root --owner=root simple_bank
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/27=0%
+# Load=12/1024=1%, Rehash=0, Collisions=0/29=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 152 B / avg = 7 B
-# current buf: size = 8162 B / used = 152 B / count = 20 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 169 B / avg = 7 B
+# current buf: size = 8162 B / used = 169 B / count = 23 / avg = 7 B
 
-# strcache performance: lookups = 37 / hit rate = 45%
+# strcache performance: lookups = 42 / hit rate = 45%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=0/37=0%
-# Finished Make data base on Sat Jun 18 23:53:33 2022
+# Load=23/8192=0%, Rehash=0, Collisions=0/42=0%
+# Finished Make data base on Sun Jun 19 21:38:15 2022
 
  
