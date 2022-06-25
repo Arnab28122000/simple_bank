@@ -7,8 +7,9 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Sat Jun 25 00:52:07 2022
+# Make data base, printed on Sun Jun 26 03:48:23 2022
 
 # Variables
 
@@ -25,9 +26,9 @@ USERPROFILE = C:\Users\arnab
 # environment
 LOCALAPPDATA = C:\Users\arnab\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c8b9cab4-4648-47b7-b78c-70ad7059d4d5-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-572e58cd-fa65-48b0-8d4f-e988d069d24c-sock
 # environment
-VSCODE_CWD = C:\Users\arnab\OneDrive\Desktop\go\simplebank
+VSCODE_CWD = C:\Users\arnab\OneDrive\Desktop\go\simple_bank
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -43,7 +44,7 @@ GOPATH = C:\Users\arnab\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11444_BGERANDKRAXWEYBU
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21356_YRTRSOZTNVIDSARN
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -73,7 +74,7 @@ MAKEFLAGS = pqrR
 # environment
 ONEDRIVE = C:\Users\arnab\OneDrive
 # makefile
-CURDIR := /cygdrive/c/Users/arnab/OneDrive/Desktop/go/simplebank
+CURDIR := /cygdrive/c/Users/arnab/OneDrive/Desktop/go/simple_bank
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -87,7 +88,7 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
-!C: = c:\Users\arnab\OneDrive\Desktop\go\simplebank
+!C: = c:\Users\arnab\OneDrive\Desktop\go\simple_bank
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
@@ -99,7 +100,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 11444
+VSCODE_PID = 21356
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -129,7 +130,8 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /cygdrive/c/Python39/Scripts:/cygdrive/c/Python39:/cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/nodejs:/cygdrive/c/ProgramData/chocolatey/bin:/cygdrive/c/Program Files/Docker/Docker/resources/bin:/cygdrive/c/ProgramData/DockerDesktop/version-bin:/cygdrive/c/Program Files/dotnet:/cygdrive/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/cygdrive/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/Program Files/Go/bin:/usr/bin:/cygdrive/c/Users/arnab/scoop/shims:/cygdrive/c/Users/arnab/.local/share/solana/install/active_release/bin:/cygdrive/c/Users/arnab/AppData/Local/Programs/Python/Python310/Scripts:/cygdrive/c/Users/arnab/AppData/Local/Programs/Python/Python310:/cygdrive/c/Users/arnab/.cargo/bin:/cygdrive/c/Users/arnab/AppData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/arnab/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/flutter/bin:/cygdrive/c/Program Files/Android/Android Studio/jre/bin:/cygdrive/c/Program Files (x86)/Java/jre1.8.0_301:/cygdrive/c/Users/arnab/AppData/Roaming/npm:/cygdrive/c/flutter/.pub-cache/bin:/cygdrive/c/Users/arnab/.dotnet/tools:/cygdrive/c/Users/arnab/.local/share/solana/install/releases/1.9.12/solana-release/bin/sdk/bpf:/cygdrive/c/Users/arnab/go/bin:/cygdrive/c/Program Files/Go/bin
+PATH = /cygdrive/c/Python39/Scripts:/cygdrive/c/Python39:/cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/nodejs:/cygdrive/c/ProgramData/chocolatey/bin:/cygdrive/c/Program Files/Docker/Docker/resources/bin:/cygdrive/c/ProgramData/DockerDesktop/version-bin:/cygdrive/c/Program Files/dotnet:/cygdrive/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/cygdrive/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/Program Files/Go/bin:/usr/bin:/cygdrive/c/Users/arnab/scoop/shims:/cygdrive/c/Users/arnab/.local/share/solana/install/active_release/bin:/cygdrive/c/Users/arnab/AppData/Local/Programs/Python/Python310/Scripts:/cygdrive/c/Users/arnab/AppData/Local/Programs/Python/Python310:/cygdrive/c/Users/arnab/.cargo/bin:/cygdrive/c/Users/arnab/Ap 
+pData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/arnab/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/flutter/bin:/cygdrive/c/Program Files/Android/Android Studio/jre/bin:/cygdrive/c/Program Files (x86)/Java/jre1.8.0_301:/cygdrive/c/Users/arnab/AppData/Roaming/npm:/cygdrive/c/flutter/.pub-cache/bin:/cygdrive/c/Users/arnab/.dotnet/tools:/cygdrive/c/Users/arnab/.local/share/solana/install/releases/1.9.12/solana-release/bin/sdk/bpf:/cygdrive/c/Users/arnab/go/bin:/cygdrive/c/Program Files/Go/bin
 # environment
 ZES_ENABLE_SYSMAN = 1
 # environment
@@ -254,7 +256,7 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-19 05:28:01.8216892
+#  Last modified 2022-06-26 03:47:47.017901
 #  File has been updated.
 #  Successfully updated.
 
@@ -338,6 +340,6 @@ createdb:
 # strcache performance: lookups = 42 / hit rate = 45%
 # hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=0/42=0%
-# Finished Make data base on Sat Jun 25 00:52:07 2022
+# Finished Make data base on Sun Jun 26 03:48:23 2022
 
  
