@@ -7,9 +7,8 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Sun Jun 19 21:38:15 2022
+# Make data base, printed on Sat Jun 25 00:52:07 2022
 
 # Variables
 
@@ -26,7 +25,7 @@ USERPROFILE = C:\Users\arnab
 # environment
 LOCALAPPDATA = C:\Users\arnab\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ac0dbf75-86b2-4c4e-800c-2ac6fb1a9595-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c8b9cab4-4648-47b7-b78c-70ad7059d4d5-sock
 # environment
 VSCODE_CWD = C:\Users\arnab\OneDrive\Desktop\go\simplebank
 # environment
@@ -44,7 +43,7 @@ GOPATH = C:\Users\arnab\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_23708_WWGDNUQBXIPRAVZQ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11444_BGERANDKRAXWEYBU
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -100,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 23708
+VSCODE_PID = 11444
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -339,6 +338,6 @@ createdb:
 # strcache performance: lookups = 42 / hit rate = 45%
 # hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=0/42=0%
-# Finished Make data base on Sun Jun 19 21:38:15 2022
+# Finished Make data base on Sat Jun 25 00:52:07 2022
 
  
